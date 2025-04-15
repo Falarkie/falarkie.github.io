@@ -2,7 +2,8 @@
 <html lang="en-US">
   <head>
     <meta charset="utf-8" />
-    <title>Mark Ures Assignment 2</title>
+    <title>Mark Ures 193</title>
+    <script src=fancifymytext.js></script>
   </head>
   <body>
     <h1>Mark Ures Assignment 2</h1>
@@ -10,6 +11,28 @@
     <p id="magic">  A topic I find really interesting is <strong>Magic: The Gathering</strong>.
                             It's an activity I've done with my friends for a long time </p>
     <img src=   "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSY8DGnUjYOdCAEXq0oQaxbgTLZxWcvEBAfzQ&s" 
-                alt="mtg" />
+                alt="mtg" /><br>
+    <p>Here is the Fancy Shmancy Text</p>
+    <h1>Fancify my Text</h1>
+
+		<fieldset style ="border: 2px solid black; padding: 10px;">
+			<legend>Text</legend>
+			<p>Enter your text here:</p>
+			<textarea id="textInput" rows="4" cols="30"></textarea>
+		</fieldset>
+
+		<fieldset style="border: 2px solid black; padding: 10px;">
+			<legend>Fancify</legend>
+			<button id="bigger" onclick="bigger()" >Bigger!</button>
+			<button id="smaller" onclick="smaller()">Smaller!</button><br>
+			<button id="moo" onclick="moo()">Moo</button><br>
+			<input type="radio" id="fancy" name="fancify" value="fancy" onchange="setStyle()">
+			<label for="fancy">FancyShmancy</label><br>
+			<input type="radio" id="boring" name="fancify" value="boring" onchange="setStyle()">
+			<label for="boring">BoringBetty</label><br>
+		</fieldset>
+
+    
+    
   </body>
 </html>
